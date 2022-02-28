@@ -31,4 +31,4 @@ io.on("connection", (Socket) => {
 });
 
 
-server.listen(8080,  () => console.log('Server started....'));
+server.listen(process.env.PORT || 80,  () => console.log('Server started....'));
