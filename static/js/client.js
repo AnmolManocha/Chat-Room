@@ -1,4 +1,5 @@
-const socket = io("http://localhost:8000");
+console.log({ location: window.location.origin });
+const socket = io(window.location.origin);
 var audio = new Audio("notification/ting.mp3");
 const form = document.getElementById("sender");
 const msgIn = document.getElementById("msgIn");
